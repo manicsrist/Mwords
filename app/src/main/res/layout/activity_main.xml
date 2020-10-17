@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/numbers"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="16dp"
+        android:gravity="start"
+        android:background="#FD8E09"
+        android:onClick="Numbers"
+        android:text="Numbers"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/family"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="#379237"
+        android:onClick="Family"
+        android:text="Family"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingTop="20dp"
+        android:paddingLeft="16dp"
+        android:gravity="start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numbers" />
+
+    <Button
+        android:id="@+id/phrases"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="#16AFCA"
+        android:onClick="Phrases"
+        android:text="phrases"
+        android:paddingTop="20dp"
+        android:paddingLeft="16dp"
+        android:gravity="start"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/family" />
+
+    <Button
+        android:id="@+id/colour"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="#C673D5"
+        android:onClick="Color"
+        android:text="Colors"
+        android:textSize="30sp"
+        android:paddingTop="20dp"
+        android:paddingLeft="16dp"
+        android:gravity="start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phrases" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
